@@ -1,0 +1,67 @@
+.login {
+  min-height: 100vh;
+  background-color: $bottom_nav_color;
+  font-family: $main_font;
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(150px);
+    h2 {
+      color: white;
+      font-family: cursive;
+    }
+    .error {
+      background-color: yellow;
+      color: rgb(214, 0, 0);
+      padding: 5px 10px;
+      margin-top: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      padding-top: 10px;
+      input {
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        height: 32px;
+        background-color: $input_bg-color;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 1rem;
+        color: lighten($input_bg-color, 50%);
+        &::placeholder {
+          font-size: 1rem;
+          color: lighten($input_bg-color, 50%);
+        }
+      }
+      button {
+        padding: 5px;
+        background-color: rgb(0, 98, 255);
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .navigate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    width: 72%;
+    a {
+      color: yellow;
+      padding-left: 3px;
+    }
+  }
+}

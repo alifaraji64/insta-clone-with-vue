@@ -1,0 +1,36 @@
+.post {
+	header {
+		background-color: darken($bottom_nav_color, 10%);
+		padding: 10px 10px;
+		display: flex;
+		i {
+			color: white;
+			font-size: 1.8rem;
+			cursor: pointer;
+		}
+	}
+
+	main {
+		button {
+			background-color: slateblue;
+			color: white;
+			border: none;
+			outline: none;
+			padding: 5px 10px;
+			border-radius: 2px;
+			margin: 10px auto;
+			display: block;
+		}
+		img {
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			padding: 1rem 0;
+			display: block;
+		}
+		p {
+			text-align: center;
+			padding-top: 1rem;
+		}
+	}
+}
